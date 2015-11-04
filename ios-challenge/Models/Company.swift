@@ -20,11 +20,28 @@ extension Company: Decodable {
 struct Company {
     let id: String?
     let numericalId: Int?
-    let geoLat: Double?
-    let geoLon: Double?
+    let geoLat: String?
+    let geoLon: String?
     let name: String?
     let displayName: String?
     let address: String?
     let images: [Image]?
-    
+}
+
+extension CompanySummary: Decodable {
+    static func decode(json: JSON) -> Decoded<CompanySummary> {
+        let companies = curry(CompanySummary.init)
+        return companies
+            <^> json <|? "numericalId"
+            <*> json <|? "name"
+            <*> json <||? "companies"
+            <*> json <||? "categories"
+    }
+}
+
+struct CompanySummary {
+    let numericalId: Int?
+    let name: String?
+    let companies: [Company]?
+    let categories: [Categories]?
 }

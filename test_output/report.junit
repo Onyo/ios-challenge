@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites tests='16' failures='0'>
+  <testsuite name='ios_challengeTests.CategoriesSpec' tests='4' failures='0'>
+    <testcase classname='ios_challengeTests.CategoriesSpec' name='Category___decode_json__numericalId_should_be_eq_30_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCategorySpecswift_19' time='0.012'/>
+    <testcase classname='ios_challengeTests.CategoriesSpec' name='Category___decode_json__name_should_be_eq_Gula_Café_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCategorySpecswift_23' time='0.001'/>
+    <testcase classname='ios_challengeTests.CategoriesSpec' name='Category___decode_json__count_of_images_should_be_eq_1_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCategorySpecswift_27' time='0.001'/>
+    <testcase classname='ios_challengeTests.CategoriesSpec' name='Category___decode_json__image_context_should_be_eq_background_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCategorySpecswift_31' time='0.005'/>
+  </testsuite>
+  <testsuite name='ios_challengeTests.CompanySpec' tests='8' failures='0'>
+    <testcase classname='ios_challengeTests.CompanySpec' name='Company__decode_json__numericalId_should_be_eq_10_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCompanySpecswift_19' time='0.004'/>
+    <testcase classname='ios_challengeTests.CompanySpec' name='Company__decode_json__name_should_be_eq_Gula_Gula_Leblon_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCompanySpecswift_23' time='0.007'/>
+    <testcase classname='ios_challengeTests.CompanySpec' name='Company__decode_json__name_should_be_eq_Av__gen____UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCompanySpecswift_27' time='0.007'/>
+    <testcase classname='ios_challengeTests.CompanySpec' name='Company__decode_json__count_of_images_should_be_eq_3_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCompanySpecswift_31' time='0.011'/>
+    <testcase classname='ios_challengeTests.CompanySpec' name='Company__List_comanies__numericalId_should_be_eq_1_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCompanySpecswift_45' time='0.002'/>
+    <testcase classname='ios_challengeTests.CompanySpec' name='Company__List_comanies__name_should_be_eq_Gula_Gula_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCompanySpecswift_49' time='0.002'/>
+    <testcase classname='ios_challengeTests.CompanySpec' name='Company__List_comanies__count_should_be_eq_1_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCompanySpecswift_53' time='0.009'/>
+    <testcase classname='ios_challengeTests.CompanySpec' name='Company__List_comanies__numericalId_of_first_company_should_be_eq_10_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsCompanySpecswift_57' time='0.004'/>
+  </testsuite>
+  <testsuite name='ios_challengeTests.ImagesSpec' tests='3' failures='0'>
+    <testcase classname='ios_challengeTests.ImagesSpec' name='Images___decode_json__width_should_be_eq_1055_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsImageSpecswift_19' time='0.005'/>
+    <testcase classname='ios_challengeTests.ImagesSpec' name='Images___decode_json__width_should_be_eq_1054_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsImageSpecswift_23' time='0.002'/>
+    <testcase classname='ios_challengeTests.ImagesSpec' name='Images___decode_json__image_context_should_be_eq_background_UsersfnazariosProjectsthinkmobioschallengeioschallengeTestsModelsImageSpecswift_27' time='0.001'/>
+  </testsuite>
+  <testsuite name='ios_challengeUITests.ios_challengeUITests' tests='1' failures='0'>
+    <testcase classname='ios_challengeUITests.ios_challengeUITests' name='testExample' time='16.413'/>
+  </testsuite>
+</testsuites>

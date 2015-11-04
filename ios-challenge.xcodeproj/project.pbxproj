@@ -12,14 +12,21 @@
 		6A8EC8C81BE4F741007E32ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8EC8C61BE4F741007E32ED /* Main.storyboard */; };
 		6A8EC8CA1BE4F741007E32ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8EC8C91BE4F741007E32ED /* Assets.xcassets */; };
 		6A8EC8CD1BE4F741007E32ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8EC8CB1BE4F741007E32ED /* LaunchScreen.storyboard */; };
-		6A8EC8D81BE4F742007E32ED /* ios_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8EC8D71BE4F742007E32ED /* ios_challengeTests.swift */; };
-		6A8EC8E31BE4F742007E32ED /* ios_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8EC8E21BE4F742007E32ED /* ios_challengeUITests.swift */; };
 		6AA4E93C1BE6493900FF6E14 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E93B1BE6493900FF6E14 /* CompanyViewController.swift */; };
 		6AA4E93E1BE6497300FF6E14 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E93D1BE6497300FF6E14 /* CategoryViewController.swift */; };
 		6AA4E9411BE64BD200FF6E14 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9401BE64BD200FF6E14 /* UIColor.swift */; };
 		6AA4E9431BE64E5C00FF6E14 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9421BE64E5C00FF6E14 /* UIImage.swift */; };
 		6AA4E9461BE656EC00FF6E14 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9451BE656EC00FF6E14 /* Company.swift */; };
 		6AA4E9481BE6596500FF6E14 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9471BE6596500FF6E14 /* Image.swift */; };
+		6AA4E94A1BEA0D2A00FF6E14 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9491BEA0D2A00FF6E14 /* Categories.swift */; };
+		6AA4E94D1BEA0E2C00FF6E14 /* CompanySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E94C1BEA0E2C00FF6E14 /* CompanySpec.swift */; };
+		6AA4E9521BEA148300FF6E14 /* CategorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9511BEA148300FF6E14 /* CategorySpec.swift */; };
+		6AA4E9541BEA169800FF6E14 /* ImageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9531BEA169800FF6E14 /* ImageSpec.swift */; };
+		6AA4E9561BEA176300FF6E14 /* OnyoApiExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9551BEA176300FF6E14 /* OnyoApiExtension.swift */; };
+		6AA4E9591BEA179900FF6E14 /* OnyoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E9581BEA179900FF6E14 /* OnyoApi.swift */; };
+		6AA4E95B1BEA1AB600FF6E14 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E95A1BEA1AB600FF6E14 /* ApiResponse.swift */; };
+		6AA4E95D1BEA1C6800FF6E14 /* CompanyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E95C1BEA1C6800FF6E14 /* CompanyApi.swift */; };
+		6AA4E9601BEA1DF200FF6E14 /* CompanyApiSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E95F1BEA1DF200FF6E14 /* CompanyApiSpec.swift */; };
 		ED5E85264A9181B778326CB6 /* Pods_ios_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307AC5346A444D44ECF10B95 /* Pods_ios_challenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,10 +59,8 @@
 		6A8EC8CC1BE4F741007E32ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A8EC8CE1BE4F741007E32ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A8EC8D31BE4F742007E32ED /* ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A8EC8D71BE4F742007E32ED /* ios_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_challengeTests.swift; sourceTree = "<group>"; };
 		6A8EC8D91BE4F742007E32ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A8EC8DE1BE4F742007E32ED /* ios-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A8EC8E21BE4F742007E32ED /* ios_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_challengeUITests.swift; sourceTree = "<group>"; };
 		6A8EC8E41BE4F742007E32ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AA4E93B1BE6493900FF6E14 /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyViewController.swift; path = ViewControllers/CompanyViewController.swift; sourceTree = "<group>"; };
 		6AA4E93D1BE6497300FF6E14 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = ViewControllers/CategoryViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +68,15 @@
 		6AA4E9421BE64E5C00FF6E14 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Extensions/UIImage.swift; sourceTree = "<group>"; };
 		6AA4E9451BE656EC00FF6E14 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Models/Company.swift; sourceTree = "<group>"; };
 		6AA4E9471BE6596500FF6E14 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Models/Image.swift; sourceTree = "<group>"; };
+		6AA4E9491BEA0D2A00FF6E14 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categories.swift; path = Models/Categories.swift; sourceTree = "<group>"; };
+		6AA4E94C1BEA0E2C00FF6E14 /* CompanySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanySpec.swift; path = Models/CompanySpec.swift; sourceTree = "<group>"; };
+		6AA4E9511BEA148300FF6E14 /* CategorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategorySpec.swift; path = Models/CategorySpec.swift; sourceTree = "<group>"; };
+		6AA4E9531BEA169800FF6E14 /* ImageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSpec.swift; path = Models/ImageSpec.swift; sourceTree = "<group>"; };
+		6AA4E9551BEA176300FF6E14 /* OnyoApiExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnyoApiExtension.swift; path = Extensions/OnyoApiExtension.swift; sourceTree = "<group>"; };
+		6AA4E9581BEA179900FF6E14 /* OnyoApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnyoApi.swift; path = Api/OnyoApi.swift; sourceTree = "<group>"; };
+		6AA4E95A1BEA1AB600FF6E14 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiResponse.swift; path = Extensions/ApiResponse.swift; sourceTree = "<group>"; };
+		6AA4E95C1BEA1C6800FF6E14 /* CompanyApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyApi.swift; path = Api/CompanyApi.swift; sourceTree = "<group>"; };
+		6AA4E95F1BEA1DF200FF6E14 /* CompanyApiSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyApiSpec.swift; path = Api/CompanyApiSpec.swift; sourceTree = "<group>"; };
 		709E86B8C8C35405FF4BAF5C /* Pods-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-challengeTests/Pods-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA4108E69F45988499E1EF1E /* Pods-ios-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-challengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-challengeTests/Pods-ios-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +146,7 @@
 			children = (
 				6AA4E9381BE6446400FF6E14 /* Application */,
 				6AA4E93F1BE64BBF00FF6E14 /* Extensions */,
+				6AA4E9571BEA178C00FF6E14 /* Api */,
 				6AA4E9441BE656DA00FF6E14 /* Models */,
 				6AA4E93A1BE6490C00FF6E14 /* ViewControllers */,
 				6AA4E9391BE6447100FF6E14 /* Interface */,
@@ -143,7 +158,9 @@
 		6A8EC8D61BE4F742007E32ED /* ios-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				6A8EC8D71BE4F742007E32ED /* ios_challengeTests.swift */,
+				6AA4E95E1BEA1DDC00FF6E14 /* Api */,
+				6AA4E94B1BEA0E0D00FF6E14 /* Model */,
+				6AA4E94E1BEA0EFD00FF6E14 /* Resources */,
 				6A8EC8D91BE4F742007E32ED /* Info.plist */,
 			);
 			path = "ios-challengeTests";
@@ -152,7 +169,6 @@
 		6A8EC8E11BE4F742007E32ED /* ios-challengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6A8EC8E21BE4F742007E32ED /* ios_challengeUITests.swift */,
 				6A8EC8E41BE4F742007E32ED /* Info.plist */,
 			);
 			path = "ios-challengeUITests";
@@ -190,6 +206,7 @@
 			children = (
 				6AA4E9401BE64BD200FF6E14 /* UIColor.swift */,
 				6AA4E9421BE64E5C00FF6E14 /* UIImage.swift */,
+				6AA4E9551BEA176300FF6E14 /* OnyoApiExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -197,10 +214,46 @@
 		6AA4E9441BE656DA00FF6E14 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6AA4E95A1BEA1AB600FF6E14 /* ApiResponse.swift */,
 				6AA4E9451BE656EC00FF6E14 /* Company.swift */,
 				6AA4E9471BE6596500FF6E14 /* Image.swift */,
+				6AA4E9491BEA0D2A00FF6E14 /* Categories.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		6AA4E94B1BEA0E0D00FF6E14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4E94C1BEA0E2C00FF6E14 /* CompanySpec.swift */,
+				6AA4E9511BEA148300FF6E14 /* CategorySpec.swift */,
+				6AA4E9531BEA169800FF6E14 /* ImageSpec.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6AA4E94E1BEA0EFD00FF6E14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6AA4E9571BEA178C00FF6E14 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4E9581BEA179900FF6E14 /* OnyoApi.swift */,
+				6AA4E95C1BEA1C6800FF6E14 /* CompanyApi.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		6AA4E95E1BEA1DDC00FF6E14 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4E95F1BEA1DF200FF6E14 /* CompanyApiSpec.swift */,
+			);
+			name = Api;
 			sourceTree = "<group>";
 		};
 		8733F3F25EE65759EC19E63A /* Frameworks */ = {
@@ -442,13 +495,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA4E95B1BEA1AB600FF6E14 /* ApiResponse.swift in Sources */,
 				6AA4E9481BE6596500FF6E14 /* Image.swift in Sources */,
 				6AA4E93C1BE6493900FF6E14 /* CompanyViewController.swift in Sources */,
 				6AA4E9431BE64E5C00FF6E14 /* UIImage.swift in Sources */,
+				6AA4E9591BEA179900FF6E14 /* OnyoApi.swift in Sources */,
 				6AA4E9411BE64BD200FF6E14 /* UIColor.swift in Sources */,
+				6AA4E95D1BEA1C6800FF6E14 /* CompanyApi.swift in Sources */,
 				6AA4E93E1BE6497300FF6E14 /* CategoryViewController.swift in Sources */,
 				6A8EC8C31BE4F741007E32ED /* AppDelegate.swift in Sources */,
+				6AA4E9561BEA176300FF6E14 /* OnyoApiExtension.swift in Sources */,
 				6AA4E9461BE656EC00FF6E14 /* Company.swift in Sources */,
+				6AA4E94A1BEA0D2A00FF6E14 /* Categories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +514,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A8EC8D81BE4F742007E32ED /* ios_challengeTests.swift in Sources */,
+				6AA4E9521BEA148300FF6E14 /* CategorySpec.swift in Sources */,
+				6AA4E9601BEA1DF200FF6E14 /* CompanyApiSpec.swift in Sources */,
+				6AA4E9541BEA169800FF6E14 /* ImageSpec.swift in Sources */,
+				6AA4E94D1BEA0E2C00FF6E14 /* CompanySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +525,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A8EC8E31BE4F742007E32ED /* ios_challengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +649,7 @@
 			baseConfigurationReference = 37C9988FF71E4EDCBE24C508 /* Pods-ios-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "ios-challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.onyo.ios-challenge";
@@ -601,6 +662,7 @@
 			baseConfigurationReference = 67F02E18195FA0A5A6B7599A /* Pods-ios-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "ios-challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.onyo.ios-challenge";

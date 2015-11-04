@@ -18,6 +18,7 @@ enum ImageContext: String {
     case Main = "company-main"
     case Medium = "company-thumbnail-medium"
     case Small = "company-thumbnail-small"
+    case Background = "category-background"
 }
 
 struct Image {
