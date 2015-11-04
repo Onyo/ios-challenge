@@ -4,6 +4,7 @@ PODS:
     - Alamofire (~> 3.1)
   - Argo (2.2.0)
   - Curry (1.4.0)
+  - ImageLoader (0.6.3)
   - Moya/Core (4.1.0):
     - Alamofire (~> 3.0)
   - Moya/ReactiveCore (4.1.0):
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - AlamofireImage (~> 2.1)
   - Argo
   - Curry
+  - ImageLoader
   - Moya/RxSwift
   - Nimble
   - PKHUD (~> 2.2)
@@ -30,6 +32,7 @@ SPEC CHECKSUMS:
   AlamofireImage: 97e00995920d85b5cb23ee4c3b7f92605f5dc74b
   Argo: 4f52a32b4cd913c204e5a45f420b3fccad3e3f24
   Curry: 294533187eedbf52db60a1e70c29b4f5c9f621c0
+  ImageLoader: 02f5df9161a7723e4e9bf697da642a789897429b
   Moya: 83fe7bb268bc4cd5cb7ab00130eed4741b1683c0
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   PKHUD: 4ec64535c98da203a3eb7303a58e13ac0bff1f8f

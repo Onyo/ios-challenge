@@ -9,6 +9,7 @@ target 'ios-challenge' do
   pod 'Argo'
   pod 'Curry'
   pod 'PKHUD', '~> 2.2'
+  pod 'ImageLoader'
 end
 
 target 'ios-challengeTests' do
