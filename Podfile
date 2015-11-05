@@ -8,7 +8,6 @@ target 'ios-challenge' do
   pod 'AlamofireImage', '~> 2.1'
   pod 'Argo'
   pod 'Curry'
-  pod 'PKHUD', '~> 2.2'
   pod 'ImageLoader'
 end
 
