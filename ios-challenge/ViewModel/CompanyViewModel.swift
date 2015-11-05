@@ -11,6 +11,7 @@ class CompanyViewModel {
     private var delegate: CompanyViewModelDelegate?
     private lazy var disposeBag = DisposeBag()
     private var companies: [Company] = []
+    private var summary: CompanySummary!
     
     init(delegate: CompanyViewModelDelegate) {
         self.delegate = delegate
@@ -21,6 +22,7 @@ class CompanyViewModel {
             .subscribe({ (event) -> Void in
                 switch event {
                 case .Next(let company):
+                    self.summary = company
                     self.refreshCompanyList(company.companies)
                 case .Error(let error):
                     self.delegate?.refreshError(error as? ApiError)
@@ -35,8 +37,12 @@ class CompanyViewModel {
         return companies.count
     }
     
-    func companyByIndex(index: Int) ->  Company {
+    func companyAtIndex(index: Int) ->  Company {
         return companies[index]
+    }
+    
+    func companySummary() -> CompanySummary {
+        return self.summary!
     }
     
     private func refreshCompanyList(companies: [Company]?) {

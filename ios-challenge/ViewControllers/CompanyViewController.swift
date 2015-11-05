@@ -6,22 +6,23 @@ class CompanyViewController: UIViewController, CompanyViewModelDelegate {
     @IBOutlet var tableViewCompany: UITableView!
     
     var viewModel: CompanyViewModel!
+    var categoryViewModel: CategoryViewModel!
     
     var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureRefreshControl()
-        viewModel = CompanyViewModel(delegate: self)
-
         self.navigationItem.titleView = UIImageView(image: UIImage(asset: .LogoBaked))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: UIImageView(image: UIImage(asset: .Onyo)))
+        
+        configureRefreshControl()
+        viewModel = CompanyViewModel(delegate: self)
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
-        viewModel.refresh()
+        refreshCompanies()
     }
     
     func refreshCompanies() {
@@ -36,7 +37,7 @@ class CompanyViewController: UIViewController, CompanyViewModelDelegate {
     func configureRefreshControl() {
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Refresh")
-        refreshControl.addTarget(self, action: "refreshCompanies", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: "refreshCompanies", forControlEvents: .ValueChanged)
         tableViewCompany.addSubview(refreshControl)
     }
     
@@ -85,12 +86,28 @@ extension CompanyViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellCompany", forIndexPath: indexPath) as! CompanyCell
         
         cell.backgroundColor(indexPath)
-        cell.populateCompany(self.viewModel.companyByIndex(indexPath.row))
+        cell.populateCompany(self.viewModel.companyAtIndex(indexPath.row))
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        if let categories = self.viewModel.companySummary().categories {
+            self.categoryViewModel = CategoryViewModel(categories: categories)
+            performSegueWithIdentifier(SegueIdentifier.SegueToCategories.rawValue, sender: nil)
+        }
+    }
+}
+
+extension CompanyViewController {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = SegueIdentifier(rawValue: segue.identifier!) {
+            switch segueIdentifier {
+            case .SegueToCategories:
+                let tabBarController = segue.destinationViewController as! OnyoTabBarController
+                tabBarController.categoryViewModel = self.categoryViewModel
+                tabBarController.selectTab(.TabBarCardapio)
+            }
+        }
     }
 }
