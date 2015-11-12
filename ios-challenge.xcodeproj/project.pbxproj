@@ -31,6 +31,8 @@
 		6AA4E95B1BEA1AB600FF6E14 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E95A1BEA1AB600FF6E14 /* ApiResponse.swift */; };
 		6AA4E95D1BEA1C6800FF6E14 /* CompanyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E95C1BEA1C6800FF6E14 /* CompanyApi.swift */; };
 		6AA4E9601BEA1DF200FF6E14 /* CompanyApiSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4E95F1BEA1DF200FF6E14 /* CompanyApiSpec.swift */; };
+		6AA654191BF4B65D00852BC8 /* CategoryCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA654181BF4B65D00852BC8 /* CategoryCollectionController.swift */; };
+		6AA6541B1BF4B69B00852BC8 /* CompanyTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6541A1BF4B69B00852BC8 /* CompanyTableController.swift */; };
 		6AD622A21BEA6D64008B794A /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD622A11BEA6D64008B794A /* Segue.swift */; };
 		6AD622A41BEA6F14008B794A /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD622A31BEA6F14008B794A /* CategoryViewModel.swift */; };
 		6AD622AA1BEA8D92008B794A /* OnyoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD622A91BEA8D92008B794A /* OnyoTabBarController.swift */; };
@@ -92,6 +94,8 @@
 		6AA4E95A1BEA1AB600FF6E14 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiResponse.swift; path = Extensions/ApiResponse.swift; sourceTree = "<group>"; };
 		6AA4E95C1BEA1C6800FF6E14 /* CompanyApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyApi.swift; path = Api/CompanyApi.swift; sourceTree = "<group>"; };
 		6AA4E95F1BEA1DF200FF6E14 /* CompanyApiSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyApiSpec.swift; path = Api/CompanyApiSpec.swift; sourceTree = "<group>"; };
+		6AA654181BF4B65D00852BC8 /* CategoryCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryCollectionController.swift; path = ViewControllers/CategoryCollectionController.swift; sourceTree = "<group>"; };
+		6AA6541A1BF4B69B00852BC8 /* CompanyTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyTableController.swift; path = ViewControllers/CompanyTableController.swift; sourceTree = "<group>"; };
 		6AD622A11BEA6D64008B794A /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Segue.swift; path = Models/Segue.swift; sourceTree = "<group>"; };
 		6AD622A31BEA6F14008B794A /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewModel.swift; path = ViewModel/CategoryViewModel.swift; sourceTree = "<group>"; };
 		6AD622A91BEA8D92008B794A /* OnyoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnyoTabBarController.swift; path = ViewControllers/OnyoTabBarController.swift; sourceTree = "<group>"; };
@@ -238,7 +242,9 @@
 			isa = PBXGroup;
 			children = (
 				6AA4E93B1BE6493900FF6E14 /* CompanyViewController.swift */,
+				6AA6541A1BF4B69B00852BC8 /* CompanyTableController.swift */,
 				6AA4E93D1BE6497300FF6E14 /* CategoryViewController.swift */,
+				6AA654181BF4B65D00852BC8 /* CategoryCollectionController.swift */,
 				6AD622A91BEA8D92008B794A /* OnyoTabBarController.swift */,
 			);
 			name = ViewControllers;
@@ -573,7 +579,9 @@
 				6AA4E9591BEA179900FF6E14 /* OnyoApi.swift in Sources */,
 				6AD622AA1BEA8D92008B794A /* OnyoTabBarController.swift in Sources */,
 				6AF3FBC01BEA3262002D60E0 /* CompanyViewModel.swift in Sources */,
+				6AA654191BF4B65D00852BC8 /* CategoryCollectionController.swift in Sources */,
 				6AA4E9411BE64BD200FF6E14 /* UIColor.swift in Sources */,
+				6AA6541B1BF4B69B00852BC8 /* CompanyTableController.swift in Sources */,
 				6AA4E95D1BEA1C6800FF6E14 /* CompanyApi.swift in Sources */,
 				6AA4E93E1BE6497300FF6E14 /* CategoryViewController.swift in Sources */,
 				6A8EC8C31BE4F741007E32ED /* AppDelegate.swift in Sources */,
