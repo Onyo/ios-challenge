@@ -1,1132 +1,605 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>22B78D3841F0F16AD0E168E0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>27C480558BAEE8199D9BB376</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>54120AC2A2A2F21358A94081</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2C842D9DD0178603DA795B09</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Onyo/Pods-Onyo-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4AD6E723FB3397A50CE605CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>54120AC2A2A2F21358A94081</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>54120AC2A2A2F21358A94081</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Onyo.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>66120686744C082F3E6A390F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Onyo.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Onyo/Pods-Onyo.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>72006FE31D93903EC7728BA3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Onyo/Pods-Onyo-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A04673401CC06444003160C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A046734B1CC06444003160C0</string>
-				<string>A04673601CC06444003160C0</string>
-				<string>A046736B1CC06444003160C0</string>
-				<string>A046734A1CC06444003160C0</string>
-				<string>DBD9BEFF3A7A36512244A4E6</string>
-				<string>27C480558BAEE8199D9BB376</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673411CC06444003160C0</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Lucas Cypriano</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>A04673481CC06444003160C0</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-					<key>A046735C1CC06444003160C0</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>A04673481CC06444003160C0</string>
-					</dict>
-					<key>A04673671CC06444003160C0</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>A04673481CC06444003160C0</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>A04673441CC06444003160C0</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>A04673401CC06444003160C0</string>
-			<key>productRefGroup</key>
-			<string>A046734A1CC06444003160C0</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>A04673481CC06444003160C0</string>
-				<string>A046735C1CC06444003160C0</string>
-				<string>A04673671CC06444003160C0</string>
-			</array>
-		</dict>
-		<key>A04673441CC06444003160C0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A046736F1CC06444003160C0</string>
-				<string>A04673701CC06444003160C0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A04673451CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A046734F1CC06444003160C0</string>
-				<string>A046734D1CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A04673461CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>4AD6E723FB3397A50CE605CC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A04673471CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A04673571CC06444003160C0</string>
-				<string>A04673541CC06444003160C0</string>
-				<string>A04673521CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A04673481CC06444003160C0</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A04673711CC06444003160C0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>22B78D3841F0F16AD0E168E0</string>
-				<string>A04673451CC06444003160C0</string>
-				<string>A04673461CC06444003160C0</string>
-				<string>A04673471CC06444003160C0</string>
-				<string>2C842D9DD0178603DA795B09</string>
-				<string>72006FE31D93903EC7728BA3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Onyo</string>
-			<key>productName</key>
-			<string>Onyo</string>
-			<key>productReference</key>
-			<string>A04673491CC06444003160C0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>A04673491CC06444003160C0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Onyo.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A046734A1CC06444003160C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A04673491CC06444003160C0</string>
-				<string>A046735D1CC06444003160C0</string>
-				<string>A04673681CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A046734B1CC06444003160C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A046734C1CC06444003160C0</string>
-				<string>A046734E1CC06444003160C0</string>
-				<string>A04673501CC06444003160C0</string>
-				<string>A04673531CC06444003160C0</string>
-				<string>A04673551CC06444003160C0</string>
-				<string>A04673581CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Onyo</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A046734C1CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A046734D1CC06444003160C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A046734C1CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A046734E1CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A046734F1CC06444003160C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A046734E1CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A04673501CC06444003160C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A04673511CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673511CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673521CC06444003160C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A04673501CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A04673531CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673541CC06444003160C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A04673531CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A04673551CC06444003160C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A04673561CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673561CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673571CC06444003160C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A04673551CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A04673581CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673591CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A04673621CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A046735A1CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A046735B1CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A046735C1CC06444003160C0</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A04673741CC06444003160C0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A04673591CC06444003160C0</string>
-				<string>A046735A1CC06444003160C0</string>
-				<string>A046735B1CC06444003160C0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>A046735F1CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OnyoTests</string>
-			<key>productName</key>
-			<string>OnyoTests</string>
-			<key>productReference</key>
-			<string>A046735D1CC06444003160C0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>A046735D1CC06444003160C0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OnyoTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A046735E1CC06444003160C0</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>A04673411CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>A04673481CC06444003160C0</string>
-			<key>remoteInfo</key>
-			<string>Onyo</string>
-		</dict>
-		<key>A046735F1CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>A04673481CC06444003160C0</string>
-			<key>targetProxy</key>
-			<string>A046735E1CC06444003160C0</string>
-		</dict>
-		<key>A04673601CC06444003160C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A04673611CC06444003160C0</string>
-				<string>A04673631CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OnyoTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673611CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>OnyoTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673621CC06444003160C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A04673611CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A04673631CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04673641CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A046736D1CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A04673651CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A04673661CC06444003160C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A04673671CC06444003160C0</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A04673771CC06444003160C0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A04673641CC06444003160C0</string>
-				<string>A04673651CC06444003160C0</string>
-				<string>A04673661CC06444003160C0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>A046736A1CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OnyoUITests</string>
-			<key>productName</key>
-			<string>OnyoUITests</string>
-			<key>productReference</key>
-			<string>A04673681CC06444003160C0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>A04673681CC06444003160C0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OnyoUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A04673691CC06444003160C0</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>A04673411CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>A04673481CC06444003160C0</string>
-			<key>remoteInfo</key>
-			<string>Onyo</string>
-		</dict>
-		<key>A046736A1CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>A04673481CC06444003160C0</string>
-			<key>targetProxy</key>
-			<string>A04673691CC06444003160C0</string>
-		</dict>
-		<key>A046736B1CC06444003160C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A046736C1CC06444003160C0</string>
-				<string>A046736E1CC06444003160C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OnyoUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A046736C1CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>OnyoUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A046736D1CC06444003160C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A046736C1CC06444003160C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A046736E1CC06444003160C0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A046736F1CC06444003160C0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A04673701CC06444003160C0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A04673711CC06444003160C0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A04673721CC06444003160C0</string>
-				<string>A04673731CC06444003160C0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A04673721CC06444003160C0</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>66120686744C082F3E6A390F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Onyo/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>LC.Onyo</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A04673731CC06444003160C0</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A3C946ED7E09A9BACB0EBA8A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Onyo/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>LC.Onyo</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A04673741CC06444003160C0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A04673751CC06444003160C0</string>
-				<string>A04673761CC06444003160C0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A04673751CC06444003160C0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OnyoTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>LC.OnyoTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Onyo.app/Onyo</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A04673761CC06444003160C0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OnyoTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>LC.OnyoTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Onyo.app/Onyo</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A04673771CC06444003160C0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A04673781CC06444003160C0</string>
-				<string>A04673791CC06444003160C0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A04673781CC06444003160C0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>OnyoUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>LC.OnyoUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Onyo</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A04673791CC06444003160C0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>OnyoUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>LC.OnyoUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Onyo</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A3C946ED7E09A9BACB0EBA8A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Onyo.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Onyo/Pods-Onyo.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBD9BEFF3A7A36512244A4E6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66120686744C082F3E6A390F</string>
-				<string>A3C946ED7E09A9BACB0EBA8A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>A04673411CC06444003160C0</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AD6E723FB3397A50CE605CC /* Pods_Onyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54120AC2A2A2F21358A94081 /* Pods_Onyo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A046734D1CC06444003160C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046734C1CC06444003160C0 /* AppDelegate.swift */; };
+		A046734F1CC06444003160C0 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046734E1CC06444003160C0 /* CompanyViewController.swift */; };
+		A04673541CC06444003160C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04673531CC06444003160C0 /* Assets.xcassets */; };
+		A04673571CC06444003160C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04673551CC06444003160C0 /* LaunchScreen.storyboard */; };
+		A04673621CC06444003160C0 /* OnyoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04673611CC06444003160C0 /* OnyoTests.swift */; };
+		A046736D1CC06444003160C0 /* OnyoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046736C1CC06444003160C0 /* OnyoUITests.swift */; };
+		A046737B1CC069D4003160C0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046737A1CC069D4003160C0 /* Model.swift */; };
+		A06DBFED1CC1B2F500339F38 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06DBFEC1CC1B2F500339F38 /* CompanyCell.swift */; };
+		A06DBFEF1CC1B32700339F38 /* CompanyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */; };
+		A06DBFF21CC1B3E200339F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06DBFF01CC1B3E200339F38 /* Main.storyboard */; };
+		A06DBFF61CC1C11000339F38 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06DBFF51CC1C11000339F38 /* BaseCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A046735E1CC06444003160C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A04673411CC06444003160C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A04673481CC06444003160C0;
+			remoteInfo = Onyo;
+		};
+		A04673691CC06444003160C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A04673411CC06444003160C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A04673481CC06444003160C0;
+			remoteInfo = Onyo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54120AC2A2A2F21358A94081 /* Pods_Onyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Onyo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66120686744C082F3E6A390F /* Pods-Onyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onyo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Onyo/Pods-Onyo.debug.xcconfig"; sourceTree = "<group>"; };
+		A04673491CC06444003160C0 /* Onyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A046734C1CC06444003160C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A046734E1CC06444003160C0 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		A04673531CC06444003160C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A04673561CC06444003160C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A04673581CC06444003160C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A046735D1CC06444003160C0 /* OnyoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnyoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04673611CC06444003160C0 /* OnyoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnyoTests.swift; sourceTree = "<group>"; };
+		A04673631CC06444003160C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04673681CC06444003160C0 /* OnyoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnyoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A046736C1CC06444003160C0 /* OnyoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnyoUITests.swift; sourceTree = "<group>"; };
+		A046736E1CC06444003160C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A046737A1CC069D4003160C0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A06DBFEC1CC1B2F500339F38 /* CompanyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyCell.xib; sourceTree = "<group>"; };
+		A06DBFF11CC1B3E200339F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A06DBFF51CC1C11000339F38 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3C946ED7E09A9BACB0EBA8A /* Pods-Onyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onyo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Onyo/Pods-Onyo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A04673461CC06444003160C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD6E723FB3397A50CE605CC /* Pods_Onyo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A046735A1CC06444003160C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04673651CC06444003160C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27C480558BAEE8199D9BB376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54120AC2A2A2F21358A94081 /* Pods_Onyo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A04673401CC06444003160C0 = {
+			isa = PBXGroup;
+			children = (
+				A046734B1CC06444003160C0 /* Onyo */,
+				A04673601CC06444003160C0 /* OnyoTests */,
+				A046736B1CC06444003160C0 /* OnyoUITests */,
+				A046734A1CC06444003160C0 /* Products */,
+				DBD9BEFF3A7A36512244A4E6 /* Pods */,
+				27C480558BAEE8199D9BB376 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A046734A1CC06444003160C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A04673491CC06444003160C0 /* Onyo.app */,
+				A046735D1CC06444003160C0 /* OnyoTests.xctest */,
+				A04673681CC06444003160C0 /* OnyoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A046734B1CC06444003160C0 /* Onyo */ = {
+			isa = PBXGroup;
+			children = (
+				A046734C1CC06444003160C0 /* AppDelegate.swift */,
+				A046734E1CC06444003160C0 /* CompanyViewController.swift */,
+				A06DBFF01CC1B3E200339F38 /* Main.storyboard */,
+				A04673531CC06444003160C0 /* Assets.xcassets */,
+				A04673551CC06444003160C0 /* LaunchScreen.storyboard */,
+				A04673581CC06444003160C0 /* Info.plist */,
+				A046737A1CC069D4003160C0 /* Model.swift */,
+				A06DBFEC1CC1B2F500339F38 /* CompanyCell.swift */,
+				A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */,
+				A06DBFF51CC1C11000339F38 /* BaseCollectionViewCell.swift */,
+			);
+			path = Onyo;
+			sourceTree = "<group>";
+		};
+		A04673601CC06444003160C0 /* OnyoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A04673611CC06444003160C0 /* OnyoTests.swift */,
+				A04673631CC06444003160C0 /* Info.plist */,
+			);
+			path = OnyoTests;
+			sourceTree = "<group>";
+		};
+		A046736B1CC06444003160C0 /* OnyoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A046736C1CC06444003160C0 /* OnyoUITests.swift */,
+				A046736E1CC06444003160C0 /* Info.plist */,
+			);
+			path = OnyoUITests;
+			sourceTree = "<group>";
+		};
+		DBD9BEFF3A7A36512244A4E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66120686744C082F3E6A390F /* Pods-Onyo.debug.xcconfig */,
+				A3C946ED7E09A9BACB0EBA8A /* Pods-Onyo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A04673481CC06444003160C0 /* Onyo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04673711CC06444003160C0 /* Build configuration list for PBXNativeTarget "Onyo" */;
+			buildPhases = (
+				22B78D3841F0F16AD0E168E0 /* Check Pods Manifest.lock */,
+				A04673451CC06444003160C0 /* Sources */,
+				A04673461CC06444003160C0 /* Frameworks */,
+				A04673471CC06444003160C0 /* Resources */,
+				2C842D9DD0178603DA795B09 /* Embed Pods Frameworks */,
+				72006FE31D93903EC7728BA3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Onyo;
+			productName = Onyo;
+			productReference = A04673491CC06444003160C0 /* Onyo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A046735C1CC06444003160C0 /* OnyoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04673741CC06444003160C0 /* Build configuration list for PBXNativeTarget "OnyoTests" */;
+			buildPhases = (
+				A04673591CC06444003160C0 /* Sources */,
+				A046735A1CC06444003160C0 /* Frameworks */,
+				A046735B1CC06444003160C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A046735F1CC06444003160C0 /* PBXTargetDependency */,
+			);
+			name = OnyoTests;
+			productName = OnyoTests;
+			productReference = A046735D1CC06444003160C0 /* OnyoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A04673671CC06444003160C0 /* OnyoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04673771CC06444003160C0 /* Build configuration list for PBXNativeTarget "OnyoUITests" */;
+			buildPhases = (
+				A04673641CC06444003160C0 /* Sources */,
+				A04673651CC06444003160C0 /* Frameworks */,
+				A04673661CC06444003160C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A046736A1CC06444003160C0 /* PBXTargetDependency */,
+			);
+			name = OnyoUITests;
+			productName = OnyoUITests;
+			productReference = A04673681CC06444003160C0 /* OnyoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A04673411CC06444003160C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lucas Cypriano";
+				TargetAttributes = {
+					A04673481CC06444003160C0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A046735C1CC06444003160C0 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A04673481CC06444003160C0;
+					};
+					A04673671CC06444003160C0 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A04673481CC06444003160C0;
+					};
+				};
+			};
+			buildConfigurationList = A04673441CC06444003160C0 /* Build configuration list for PBXProject "Onyo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A04673401CC06444003160C0;
+			productRefGroup = A046734A1CC06444003160C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A04673481CC06444003160C0 /* Onyo */,
+				A046735C1CC06444003160C0 /* OnyoTests */,
+				A04673671CC06444003160C0 /* OnyoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A04673471CC06444003160C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04673571CC06444003160C0 /* LaunchScreen.storyboard in Resources */,
+				A04673541CC06444003160C0 /* Assets.xcassets in Resources */,
+				A06DBFEF1CC1B32700339F38 /* CompanyCell.xib in Resources */,
+				A06DBFF21CC1B3E200339F38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A046735B1CC06444003160C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04673661CC06444003160C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22B78D3841F0F16AD0E168E0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C842D9DD0178603DA795B09 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Onyo/Pods-Onyo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72006FE31D93903EC7728BA3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Onyo/Pods-Onyo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A04673451CC06444003160C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06DBFF61CC1C11000339F38 /* BaseCollectionViewCell.swift in Sources */,
+				A06DBFED1CC1B2F500339F38 /* CompanyCell.swift in Sources */,
+				A046737B1CC069D4003160C0 /* Model.swift in Sources */,
+				A046734F1CC06444003160C0 /* CompanyViewController.swift in Sources */,
+				A046734D1CC06444003160C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04673591CC06444003160C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04673621CC06444003160C0 /* OnyoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04673641CC06444003160C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A046736D1CC06444003160C0 /* OnyoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A046735F1CC06444003160C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A04673481CC06444003160C0 /* Onyo */;
+			targetProxy = A046735E1CC06444003160C0 /* PBXContainerItemProxy */;
+		};
+		A046736A1CC06444003160C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A04673481CC06444003160C0 /* Onyo */;
+			targetProxy = A04673691CC06444003160C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A04673551CC06444003160C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A04673561CC06444003160C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A06DBFF01CC1B3E200339F38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A06DBFF11CC1B3E200339F38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A046736F1CC06444003160C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A04673701CC06444003160C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A04673721CC06444003160C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66120686744C082F3E6A390F /* Pods-Onyo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Onyo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.Onyo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A04673731CC06444003160C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C946ED7E09A9BACB0EBA8A /* Pods-Onyo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Onyo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.Onyo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A04673751CC06444003160C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OnyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.OnyoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Onyo.app/Onyo";
+			};
+			name = Debug;
+		};
+		A04673761CC06444003160C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OnyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.OnyoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Onyo.app/Onyo";
+			};
+			name = Release;
+		};
+		A04673781CC06444003160C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OnyoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.OnyoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Onyo;
+			};
+			name = Debug;
+		};
+		A04673791CC06444003160C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OnyoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.OnyoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Onyo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A04673441CC06444003160C0 /* Build configuration list for PBXProject "Onyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A046736F1CC06444003160C0 /* Debug */,
+				A04673701CC06444003160C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04673711CC06444003160C0 /* Build configuration list for PBXNativeTarget "Onyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04673721CC06444003160C0 /* Debug */,
+				A04673731CC06444003160C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04673741CC06444003160C0 /* Build configuration list for PBXNativeTarget "OnyoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04673751CC06444003160C0 /* Debug */,
+				A04673761CC06444003160C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04673771CC06444003160C0 /* Build configuration list for PBXNativeTarget "OnyoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04673781CC06444003160C0 /* Debug */,
+				A04673791CC06444003160C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A04673411CC06444003160C0 /* Project object */;
+}

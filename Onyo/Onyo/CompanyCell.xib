@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="companyCell" id="ZGt-ny-OPn" customClass="CompanyCell" customModule="Onyo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="248"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="248"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-fs-1LR">
+                        <rect key="frame" x="19" y="19" width="336" height="179"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4If-0X-EjK">
+                                <rect key="frame" x="4" y="4" width="327" height="171"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ZX7-sr-4JS">
+                                <rect key="frame" x="150" y="75" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="EIL-Zl-8aY"/>
+                                    <constraint firstAttribute="height" constant="20" id="heC-Y3-bUD"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwl-c2-avN">
+                                <rect key="frame" x="0.0" y="127" width="52" height="52"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.1176470588" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="jvY-fY-Sm9"/>
+                                    <constraint firstAttribute="width" constant="52" id="vAj-pC-coO"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon_map"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.11764705882352941" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZX7-sr-4JS" firstAttribute="centerX" secondItem="yZV-fs-1LR" secondAttribute="centerX" constant="-8" id="6zG-ri-uff"/>
+                            <constraint firstItem="ZX7-sr-4JS" firstAttribute="centerY" secondItem="yZV-fs-1LR" secondAttribute="centerY" constant="-4.5" id="G2a-IF-L9h"/>
+                            <constraint firstAttribute="bottom" secondItem="4If-0X-EjK" secondAttribute="bottom" constant="4" id="HWH-Oz-8i8"/>
+                            <constraint firstItem="Pwl-c2-avN" firstAttribute="leading" secondItem="yZV-fs-1LR" secondAttribute="leading" id="Jvd-L2-Z0C"/>
+                            <constraint firstAttribute="bottom" secondItem="Pwl-c2-avN" secondAttribute="bottom" id="ZZO-cY-pdw"/>
+                            <constraint firstAttribute="trailing" secondItem="4If-0X-EjK" secondAttribute="trailing" constant="5" id="b8A-1c-S8n"/>
+                            <constraint firstItem="4If-0X-EjK" firstAttribute="top" secondItem="yZV-fs-1LR" secondAttribute="top" constant="4" id="gZ7-r8-EkA"/>
+                            <constraint firstItem="4If-0X-EjK" firstAttribute="leading" secondItem="yZV-fs-1LR" secondAttribute="leading" constant="4" id="rO7-AV-6UU"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IPANEMA ~250m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icg-Ms-jyl">
+                        <rect key="frame" x="19" y="208" width="288" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="6Aa-DH-HWQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVENIDA GENERAL SANTANDER LORE, 299, RJ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWN-mw-fTK">
+                        <rect key="frame" x="19" y="223" width="306" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="B0Z-Gk-xpQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                        <color key="textColor" red="0.13333333333333333" green="0.16862745098039217" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Zdr-05-q5Z">
+                        <rect key="frame" x="331" y="213" width="24" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="R8h-ra-Cnj"/>
+                            <constraint firstAttribute="width" constant="24" id="SRz-YQ-6yP"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="EWN-mw-fTK" firstAttribute="top" secondItem="Icg-Ms-jyl" secondAttribute="bottom" constant="2" id="5P6-a6-CKf"/>
+                <constraint firstItem="EWN-mw-fTK" firstAttribute="leading" secondItem="ZGt-ny-OPn" secondAttribute="leading" constant="19" id="7VG-nI-F5r"/>
+                <constraint firstItem="Icg-Ms-jyl" firstAttribute="leading" secondItem="ZGt-ny-OPn" secondAttribute="leading" constant="19" id="8AB-cx-weZ"/>
+                <constraint firstItem="yZV-fs-1LR" firstAttribute="top" secondItem="ZGt-ny-OPn" secondAttribute="top" constant="19" id="9sl-JP-zhZ"/>
+                <constraint firstItem="Zdr-05-q5Z" firstAttribute="leading" secondItem="EWN-mw-fTK" secondAttribute="trailing" constant="6" id="FEi-Ak-ED8"/>
+                <constraint firstAttribute="trailing" secondItem="Zdr-05-q5Z" secondAttribute="trailing" constant="20" id="FGT-hx-jro"/>
+                <constraint firstAttribute="trailing" secondItem="yZV-fs-1LR" secondAttribute="trailing" constant="20" id="J3S-k0-VK4"/>
+                <constraint firstAttribute="bottom" secondItem="Zdr-05-q5Z" secondAttribute="bottom" constant="12" id="R8y-fo-clZ"/>
+                <constraint firstAttribute="trailing" secondItem="Icg-Ms-jyl" secondAttribute="trailing" constant="68" id="SO9-8D-WG8"/>
+                <constraint firstItem="Icg-Ms-jyl" firstAttribute="top" secondItem="yZV-fs-1LR" secondAttribute="bottom" constant="10" id="YyR-KS-sZx"/>
+                <constraint firstAttribute="trailing" secondItem="EWN-mw-fTK" secondAttribute="trailing" constant="50" id="bLa-2H-tKG"/>
+                <constraint firstAttribute="bottom" secondItem="EWN-mw-fTK" secondAttribute="bottom" constant="10" id="gVm-Uq-dwh"/>
+                <constraint firstItem="yZV-fs-1LR" firstAttribute="leading" secondItem="ZGt-ny-OPn" secondAttribute="leading" constant="19" id="quT-05-2TT"/>
+            </constraints>
+            <size key="customSize" width="473" height="236"/>
+            <connections>
+                <outlet property="activity" destination="ZX7-sr-4JS" id="gob-nI-ojS"/>
+                <outlet property="address" destination="EWN-mw-fTK" id="7O5-Nh-NnP"/>
+                <outlet property="displayName" destination="Icg-Ms-jyl" id="tnJ-sn-Yb8"/>
+                <outlet property="imageView" destination="4If-0X-EjK" id="eVa-sf-cgX"/>
+            </connections>
+            <point key="canvasLocation" x="466.5" y="365"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_arrow" width="7" height="11"/>
+        <image name="icon_map" width="81" height="81"/>
+    </resources>
+</document>
