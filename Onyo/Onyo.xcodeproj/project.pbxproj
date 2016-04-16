@@ -19,6 +19,7 @@
 		A06DBFEF1CC1B32700339F38 /* CompanyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */; };
 		A06DBFF21CC1B3E200339F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06DBFF01CC1B3E200339F38 /* Main.storyboard */; };
 		A06DBFF61CC1C11000339F38 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06DBFF51CC1C11000339F38 /* BaseCollectionViewCell.swift */; };
+		A0DB80891CC2CB4500E2F298 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DB80881CC2CB4500E2F298 /* Connection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyCell.xib; sourceTree = "<group>"; };
 		A06DBFF11CC1B3E200339F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A06DBFF51CC1C11000339F38 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0DB80881CC2CB4500E2F298 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		A3C946ED7E09A9BACB0EBA8A /* Pods-Onyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onyo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Onyo/Pods-Onyo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 				A06DBFEC1CC1B2F500339F38 /* CompanyCell.swift */,
 				A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */,
 				A06DBFF51CC1C11000339F38 /* BaseCollectionViewCell.swift */,
+				A0DB80881CC2CB4500E2F298 /* Connection.swift */,
 			);
 			path = Onyo;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				TargetAttributes = {
 					A04673481CC06444003160C0 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = YKJ8ZPE2LR;
 					};
 					A046735C1CC06444003160C0 = {
 						CreatedOnToolsVersion = 7.3;
@@ -345,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A06DBFF61CC1C11000339F38 /* BaseCollectionViewCell.swift in Sources */,
+				A0DB80891CC2CB4500E2F298 /* Connection.swift in Sources */,
 				A06DBFED1CC1B2F500339F38 /* CompanyCell.swift in Sources */,
 				A046737B1CC069D4003160C0 /* Model.swift in Sources */,
 				A046734F1CC06444003160C0 /* CompanyViewController.swift in Sources */,
@@ -493,6 +498,7 @@
 			baseConfigurationReference = 66120686744C082F3E6A390F /* Pods-Onyo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Onyo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -506,6 +512,7 @@
 			baseConfigurationReference = A3C946ED7E09A9BACB0EBA8A /* Pods-Onyo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Onyo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

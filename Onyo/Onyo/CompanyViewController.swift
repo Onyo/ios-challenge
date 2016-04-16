@@ -7,49 +7,47 @@
 //
 
 import UIKit
-import Alamofire
-import AlamofireObjectMapper
+import SVProgressHUD
 
-private let nibName = "CompanyCell"
+private let nib = "CompanyCell"
 private let reuseIdentifier = "companyCell"
 
 class CompanyViewController: UICollectionViewController {
     
-    var dataSouce: [Company] = []
-
+    var dataSource:  [Company] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadCompanyData()
+        loadData()
         setupCollectionView()
+        
+        self.dataSource = Model().getCompanies()
         
         //TODO: setup navigationBar according to the preview
         title = "Baked Potato"
         
     }
     
-    //TODO: show progress
-    //TODO: move it to the correct class
-    func loadCompanyData() {
-        
-        let URL = "http://api.staging.onyo.com/v1/mobile/brand/1/company"
-        Alamofire.request(.GET, URL).responseArray(keyPath: "companies") { (response: Response<[Company], NSError>) in
+    func loadData() {
+       
+        SVProgressHUD.show()
+        Connection().loadData({ [unowned self] (objectList) in
             
-            let companyArray = response.result.value
+            SVProgressHUD.dismiss()
+            self.dataSource = objectList as! [Company]
+            self.collectionView!.reloadData()
             
-            if let companyArray = companyArray {
+            }) { (error) in
                 
-                self.dataSouce = companyArray
-                self.collectionView?.reloadData()
-                
-            }
+                SVProgressHUD.dismiss()
         }
     }
     
     func setupCollectionView() {
         
         collectionView?.backgroundColor = UIColor.whiteColor()
-        collectionView?.registerNib(UINib(nibName: "CompanyCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView?.registerNib(UINib(nibName: nib, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         collectionView?.setCollectionViewLayout(setupFlowLayout(), animated: false)
     }
     
@@ -68,7 +66,7 @@ class CompanyViewController: UICollectionViewController {
     
     //MARK: - UICollectionView Delegate/DataSource
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSouce.count
+        return dataSource.count
     }
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -78,10 +76,23 @@ class CompanyViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
      
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CompanyCell
-        
-        cell.setupCell(dataSouce[indexPath.row], row:indexPath.row)
+        cell.setupCell(dataSource[indexPath.row], row:indexPath.row)
         
         return cell
+        
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didEndDisplayingCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        
+        let cell = cell as! CompanyCell
+        cell.cancelImageLoad()
+        
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        let company = dataSource[indexPath.row]
+        let menu = Model().getMenuWithId(company.onId)
         
     }
 }

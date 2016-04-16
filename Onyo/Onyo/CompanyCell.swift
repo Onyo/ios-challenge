@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CompanyCell: BaseCollectionViewCell {
     
@@ -40,20 +41,23 @@ class CompanyCell: BaseCollectionViewCell {
         
     }
     
-    //TODO: load and cache Image
-    //TODO: estimate distance to location *not sure where to put this*
+    func cancelImageLoad() {
+        imageView.kf_cancelDownloadTask()
+    }
+    
+    //TODO: estimate distance to location
     func setupCell(company: Company, row: NSInteger) {
         
-        displayName.text = company.displayName?.uppercaseString // +distanceFromGeoLocation
-        address.text = company.address?.uppercaseString
+        displayName.text = company.displayName.uppercaseString // +distanceFromGeoLocation
+        address.text = company.address.uppercaseString
         backgroundColor = (row % 2 == 0) ? UIColor.whiteColor() : UIColor(red:0.949, green:0.956, blue:0.968, alpha:1)
+        activity.hidden = true
+    
+        //TODO: get the correct image for the collectionView size
+        for image in company.image {
+            imageView.kf_setImageWithURL(NSURL(string:image.url)!, placeholderImage: nil)
+            break
+        }
         
-//        if let images = company.image {
-//            for image in images {
-//                print("\(image.url)")
-//            }
-//        }
     }
-
-
 }
