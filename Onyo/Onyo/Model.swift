@@ -198,6 +198,10 @@ class Model {
         
         let realm = try! Realm()
         
+        realm.beginWrite()
+        menu.categories.removeAll()
+        try! realm.commitWrite()
+        
         for categoryOnId in menu.categoriesOnId {
             if let category = getCategoriesWithId(categoryOnId.value!) {
                 realm.beginWrite()
@@ -216,6 +220,20 @@ class Model {
         }else{
             return nil
         }
+    }
+    
+    func getCategoriesOrderedForMenu(menu: Menu) -> [Category]? {
+        
+        let realm = try! Realm()
+        
+        var categoriesString: Array<String> = []
+        for categorie in menu.categoriesOnId {
+            categoriesString.append(categorie.value!)
+        }
+        
+        let category = realm.objects(Category).filter("onId IN %@", categoriesString).sorted("order")
+        
+        return Array(category)
     }
     
     func getCategoriesWithId(onId: String) -> Category? {
