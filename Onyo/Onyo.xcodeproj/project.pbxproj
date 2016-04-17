@@ -15,6 +15,9 @@
 		A04673621CC06444003160C0 /* OnyoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04673611CC06444003160C0 /* OnyoTests.swift */; };
 		A046736D1CC06444003160C0 /* OnyoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046736C1CC06444003160C0 /* OnyoUITests.swift */; };
 		A046737B1CC069D4003160C0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046737A1CC069D4003160C0 /* Model.swift */; };
+		A05829671CC2DBA400DE61E2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05829661CC2DBA400DE61E2 /* CategoryCell.swift */; };
+		A05829691CC2DF9800DE61E2 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05829681CC2DF9800DE61E2 /* CategoryCell.xib */; };
+		A058296B1CC2E2D600DE61E2 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A058296A1CC2E2D600DE61E2 /* CategoryViewController.swift */; };
 		A06DBFED1CC1B2F500339F38 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06DBFEC1CC1B2F500339F38 /* CompanyCell.swift */; };
 		A06DBFEF1CC1B32700339F38 /* CompanyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */; };
 		A06DBFF21CC1B3E200339F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06DBFF01CC1B3E200339F38 /* Main.storyboard */; };
@@ -55,6 +58,10 @@
 		A046736C1CC06444003160C0 /* OnyoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnyoUITests.swift; sourceTree = "<group>"; };
 		A046736E1CC06444003160C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A046737A1CC069D4003160C0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A05829661CC2DBA400DE61E2 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		A05829681CC2DF9800DE61E2 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		A058296A1CC2E2D600DE61E2 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		A06A94BC1CC413F400589360 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A06DBFEC1CC1B2F500339F38 /* CompanyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
 		A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyCell.xib; sourceTree = "<group>"; };
 		A06DBFF11CC1B3E200339F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +99,7 @@
 		27C480558BAEE8199D9BB376 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A06A94BC1CC413F400589360 /* CoreLocation.framework */,
 				54120AC2A2A2F21358A94081 /* Pods_Onyo.framework */,
 			);
 			name = Frameworks;
@@ -133,6 +141,9 @@
 				A06DBFEE1CC1B32700339F38 /* CompanyCell.xib */,
 				A06DBFF51CC1C11000339F38 /* BaseCollectionViewCell.swift */,
 				A0DB80881CC2CB4500E2F298 /* Connection.swift */,
+				A05829661CC2DBA400DE61E2 /* CategoryCell.swift */,
+				A05829681CC2DF9800DE61E2 /* CategoryCell.xib */,
+				A058296A1CC2E2D600DE61E2 /* CategoryViewController.swift */,
 			);
 			path = Onyo;
 			sourceTree = "<group>";
@@ -272,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05829691CC2DF9800DE61E2 /* CategoryCell.xib in Resources */,
 				A04673571CC06444003160C0 /* LaunchScreen.storyboard in Resources */,
 				A04673541CC06444003160C0 /* Assets.xcassets in Resources */,
 				A06DBFEF1CC1B32700339F38 /* CompanyCell.xib in Resources */,
@@ -351,6 +363,8 @@
 				A06DBFF61CC1C11000339F38 /* BaseCollectionViewCell.swift in Sources */,
 				A0DB80891CC2CB4500E2F298 /* Connection.swift in Sources */,
 				A06DBFED1CC1B2F500339F38 /* CompanyCell.swift in Sources */,
+				A05829671CC2DBA400DE61E2 /* CategoryCell.swift in Sources */,
+				A058296B1CC2E2D600DE61E2 /* CategoryViewController.swift in Sources */,
 				A046737B1CC069D4003160C0 /* Model.swift in Sources */,
 				A046734F1CC06444003160C0 /* CompanyViewController.swift in Sources */,
 				A046734D1CC06444003160C0 /* AppDelegate.swift in Sources */,

@@ -40,6 +40,7 @@ class CompanyViewController: UICollectionViewController {
             
             }) { (error) in
                 
+                //TODO: should show an error in case there's no cache...
                 SVProgressHUD.dismiss()
         }
     }
@@ -92,7 +93,18 @@ class CompanyViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         let company = dataSource[indexPath.row]
-        let menu = Model().getMenuWithId(company.onId)
+        if let menu = Model().getMenuWithId(company.menuOnId) {
+            Model().updateMenu(menu)
+            performSegueWithIdentifier("TabBarSegue", sender: menu)
+        }
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let categoryViewController = segue.destinationViewController as! CategoryViewController
+        let menu = sender as! Menu
+        categoryViewController.menu = menu
         
     }
 }
