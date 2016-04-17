@@ -16,7 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onyo" translatesAutoresizingMaskIntoConstraints="NO" id="eZG-wC-fhS">
+                                <rect key="frame" x="282" y="555" width="36" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="POK-MD-1Oe"/>
+                                    <constraint firstAttribute="width" constant="36" id="Wce-CV-8Qk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dh-Z5-DDL">
+                                <rect key="frame" x="259" y="531" width="77" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1ww-sF-yBW"/>
+                                    <constraint firstAttribute="width" constant="77" id="UEk-8u-gh6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_navigation_bar" translatesAutoresizingMaskIntoConstraints="NO" id="CTL-du-c3u">
+                                <rect key="frame" x="221" y="277" width="159" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Klb-0N-zCF"/>
+                                    <constraint firstAttribute="width" constant="159" id="dhb-zQ-nU7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.12549019607843137" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eZG-wC-fhS" firstAttribute="top" secondItem="3Dh-Z5-DDL" secondAttribute="bottom" constant="3" id="2vc-qO-esc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="eZG-wC-fhS" secondAttribute="bottom" constant="20" id="Ev1-2X-D7o"/>
+                            <constraint firstItem="CTL-du-c3u" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="X9x-qu-jsc"/>
+                            <constraint firstItem="eZG-wC-fhS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="leM-i0-iVX"/>
+                            <constraint firstItem="CTL-du-c3u" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nHf-UM-AZk"/>
+                            <constraint firstItem="3Dh-Z5-DDL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-2.5" id="naE-HW-eXJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +58,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_navigation_bar" width="159" height="29"/>
+        <image name="onyo" width="30" height="19"/>
+    </resources>
 </document>

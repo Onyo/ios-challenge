@@ -9,7 +9,9 @@
 import UIKit
 import SVProgressHUD
 
-private let nib = "CompanyCell"
+private let logo            = "onyo"
+private let logo_navigation = "logo_navigation_bar"
+private let nib             = "CompanyCell"
 private let reuseIdentifier = "companyCell"
 
 class CompanyViewController: UICollectionViewController {
@@ -19,14 +21,25 @@ class CompanyViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigation()
         loadData()
         setupCollectionView()
         
         self.dataSource = Model().getCompanies()
         
-        //TODO: setup navigationBar according to the preview
-        title = "Baked Potato"
         
+    }
+    
+    //MARK: - Initial Setup
+    func setupNavigation() {
+        
+        let logoImage = UIImage(named: logo_navigation)
+        let imageView = UIImageView(image: logoImage)
+        navigationItem.titleView = imageView
+        
+        let logoOnyo = UIImage(named: logo)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: logoOnyo, style: .Plain, target: self, action: nil)
+
     }
     
     func loadData() {

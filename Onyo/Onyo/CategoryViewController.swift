@@ -10,7 +10,9 @@ import Foundation
 import SVProgressHUD
 import CHTCollectionViewWaterfallLayout
 
-private let nib = "CategoryCell"
+private let back            = "back"
+private let logo_navigation = "logo_navigation_bar"
+private let nib             = "CategoryCell"
 private let reuseIdentifier = "categoryCell"
 
 class CategoryViewController: UICollectionViewController, CHTCollectionViewDelegateWaterfallLayout {
@@ -21,14 +23,29 @@ class CategoryViewController: UICollectionViewController, CHTCollectionViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigation()
         setupCollectionView()
         
         collectionView?.backgroundColor = UIColor(red:0.949, green:0.956, blue:0.968, alpha:1)
         Model().getCategoriesOrderedForMenu(menu!)
         dataSource = Model().getCategoriesOrderedForMenu(menu!)!
-        //TODO: setup navigationBar according to the preview
-        title = "Catigorias"
         
+    }
+    
+    //MARK: - Initial Setup
+    func setupNavigation() {
+        
+        let logoImage = UIImage(named: logo_navigation)
+        let imageView = UIImageView(image: logoImage)
+        navigationItem.titleView = imageView
+        
+        let backButton = UIImage(named: back)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: backButton, style: .Plain, target: self, action: #selector(CategoryViewController.navBack))
+
+    }
+    
+    func navBack() {
+        navigationController?.popViewControllerAnimated(true)
     }
 
     func setupCollectionView() {
