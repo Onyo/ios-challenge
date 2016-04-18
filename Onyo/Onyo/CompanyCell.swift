@@ -55,7 +55,7 @@ class CompanyCell: BaseCollectionViewCell {
     
         //TODO: get the correct image for the collectionView size
         for image in company.image {
-            imageView.kf_setImageWithURL(NSURL(string:image.url)!, placeholderImage: nil)
+            imageView.kf_setImageWithURL(NSURL(string:image.url)!, placeholderImage: UIImage(named: "company_placeholder"))
             break
         }
         

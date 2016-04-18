@@ -43,7 +43,6 @@ class CategoryCell: BaseCollectionViewCell {
         let minSize: UInt32 = 175
         let maxSize: UInt32 = 215
         let randHeight = CGFloat(arc4random_uniform(maxSize - minSize)+minSize)
-
         let newCellWidth = normalCellWidth * ratio(frame)
         let newCellHeight = randHeight * ratio(frame)
         
@@ -55,13 +54,12 @@ class CategoryCell: BaseCollectionViewCell {
         imageView.kf_cancelDownloadTask()
     }
 
-    //TODO: estimate distance to location
     func setupCell(category: Category, row: NSInteger) {
         
         name.text = category.name.uppercaseString
         //TODO: get the correct image for the collectionView size
         for image in category.image {
-            imageView.kf_setImageWithURL(NSURL(string:image.url)!, placeholderImage: nil)
+            imageView.kf_setImageWithURL(NSURL(string:image.url)!, placeholderImage: UIImage(named: "category_placeholder"))
             break
         }
         

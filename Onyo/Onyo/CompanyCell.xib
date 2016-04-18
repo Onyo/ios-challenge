@@ -104,7 +104,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="icon_arrow" width="7" height="11"/>
+        <image name="icon_arrow" width="32" height="36"/>
         <image name="icon_map" width="81" height="81"/>
     </resources>
 </document>

@@ -25,15 +25,12 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="kek-bH-wAi"/>
-                    <connections>
-                        <segue destination="A2p-gS-EpI" kind="show" identifier="TabBarSegue" id="gkq-xU-NZ6"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amw-O1-534" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1535" y="309"/>
         </scene>
-        <!--Item-->
+        <!--Resgate-->
         <scene sceneID="S5W-F2-ZTT">
             <objects>
                 <viewController id="lIN-QD-3CK" sceneMemberID="viewController">
@@ -42,17 +39,39 @@
                         <viewControllerLayoutGuide type="bottom" id="x7l-aA-pP1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FkQ-Rb-z6O">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bz-ys-eCE">
+                                <rect key="frame" x="204" y="206" width="202" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to see here, moving on..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRs-TC-O7A">
+                                <rect key="frame" x="150" y="265" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3p3-u6-5CW"/>
+                                    <constraint firstAttribute="height" constant="21" id="r0v-pb-YPM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BRs-TC-O7A" firstAttribute="centerY" secondItem="FkQ-Rb-z6O" secondAttribute="centerY" id="IbO-Wh-MAN"/>
+                            <constraint firstItem="BRs-TC-O7A" firstAttribute="centerX" secondItem="FkQ-Rb-z6O" secondAttribute="centerX" id="WcT-9q-dET"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cWL-x0-hLa"/>
+                    <tabBarItem key="tabBarItem" title="Resgate" image="resgate" id="cWL-x0-hLa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOM-Yf-qpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3080" y="1499"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="a6J-Uj-tvD">
             <objects>
                 <viewController id="DxY-xi-Nq3" sceneMemberID="viewController">
@@ -61,22 +80,38 @@
                         <viewControllerLayoutGuide type="bottom" id="5wT-4f-b5t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="v8W-UM-RIy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What were you expecting?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2Q-PW-OkI">
+                                <rect key="frame" x="150" y="265" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="X0M-FG-3bH"/>
+                                    <constraint firstAttribute="height" constant="21" id="aGU-x0-Yxa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="o2Q-PW-OkI" firstAttribute="centerY" secondItem="v8W-UM-RIy" secondAttribute="centerY" id="CT2-EA-BaY"/>
+                            <constraint firstItem="o2Q-PW-OkI" firstAttribute="centerX" secondItem="v8W-UM-RIy" secondAttribute="centerX" id="oi8-af-YQc"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="HmY-X7-XAR"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="HmY-X7-XAR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZ1-3H-5iP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3080" y="-21"/>
         </scene>
-        <!--Category View Controller-->
+        <!--Cardápio-->
         <scene sceneID="zUy-KM-2bo">
             <objects>
                 <collectionViewController id="A2p-gS-EpI" customClass="CategoryViewController" customModule="Onyo" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ssk-zL-2IB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yDh-IN-JS0">
                             <size key="itemSize" width="50" height="50"/>
@@ -86,7 +121,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zll-Y6-4og">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -100,6 +135,7 @@
                             <outlet property="delegate" destination="A2p-gS-EpI" id="rHE-79-bIY"/>
                         </connections>
                     </collectionView>
+                    <tabBarItem key="tabBarItem" title="Cardápio" image="search" id="P4G-aP-EdZ"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A3d-Om-AAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,20 +144,22 @@
         <!--Tab Bar Controller-->
         <scene sceneID="YTW-8d-mdf">
             <objects>
-                <tabBarController id="hnc-eP-ZAv" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="w0s-Ca-aot">
+                <tabBarController storyboardIdentifier="tabbar" id="hnc-eP-ZAv" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="w0s-Ca-aot">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.078431372549019607" green="0.11372549019607843" blue="0.17647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="DxY-xi-Nq3" kind="relationship" relationship="viewControllers" id="BeB-Tc-i3k"/>
+                        <segue destination="A2p-gS-EpI" kind="relationship" relationship="viewControllers" id="8Az-0Z-Kag"/>
                         <segue destination="lIN-QD-3CK" kind="relationship" relationship="viewControllers" id="TQh-0d-4D6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CC-cC-4jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="309"/>
+            <point key="canvasLocation" x="2249" y="309"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="szh-ua-lsr">
@@ -140,4 +178,9 @@
             <point key="canvasLocation" x="857" y="309"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home" width="24" height="24"/>
+        <image name="resgate" width="24" height="24"/>
+        <image name="search" width="32" height="32"/>
+    </resources>
 </document>

@@ -106,19 +106,19 @@ class CompanyViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         let company = dataSource[indexPath.row]
-        if let menu = Model().getMenuWithId(company.menuOnId) {
-            Model().updateMenu(menu)
-            performSegueWithIdentifier("TabBarSegue", sender: menu)
-        }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tabbar = storyboard.instantiateViewControllerWithIdentifier("tabbar") as! UITabBarController
+        tabbar.selectedIndex = 1
+        tabbar.tabBar.tintColor = UIColor.whiteColor()
+        
+        let categoryController = tabbar.viewControllers![1] as! CategoryViewController
+        let menu = Model().getMenuWithId(company.menuOnId)!
+        categoryController.menu = menu
+        
+        navigationController?.pushViewController(tabbar, animated: true)
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        let categoryViewController = segue.destinationViewController as! CategoryViewController
-        let menu = sender as! Menu
-        categoryViewController.menu = menu
-        
-    }
 }
 

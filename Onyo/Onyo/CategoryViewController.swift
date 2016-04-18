@@ -10,6 +10,7 @@ import Foundation
 import SVProgressHUD
 import CHTCollectionViewWaterfallLayout
 
+private let logo            = "onyo"
 private let back            = "back"
 private let logo_navigation = "logo_navigation_bar"
 private let nib             = "CategoryCell"
@@ -25,10 +26,15 @@ class CategoryViewController: UICollectionViewController, CHTCollectionViewDeleg
         
         setupNavigation()
         setupCollectionView()
-        
         collectionView?.backgroundColor = UIColor(red:0.949, green:0.956, blue:0.968, alpha:1)
-        Model().getCategoriesOrderedForMenu(menu!)
+                
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        Model().updateMenu(menu!)
         dataSource = Model().getCategoriesOrderedForMenu(menu!)!
+        collectionView?.reloadData()
         
     }
     
@@ -37,10 +43,14 @@ class CategoryViewController: UICollectionViewController, CHTCollectionViewDeleg
         
         let logoImage = UIImage(named: logo_navigation)
         let imageView = UIImageView(image: logoImage)
-        navigationItem.titleView = imageView
+        self.tabBarController?.navigationItem.titleView = imageView
+
         
         let backButton = UIImage(named: back)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: backButton, style: .Plain, target: self, action: #selector(CategoryViewController.navBack))
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: backButton, style: .Plain, target: self, action: #selector(CategoryViewController.navBack))
+        
+        let logoOnyo = UIImage(named: logo)
+        self.tabBarController?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: logoOnyo, style: .Plain, target: self, action: nil)
 
     }
     
@@ -69,7 +79,6 @@ class CategoryViewController: UICollectionViewController, CHTCollectionViewDeleg
         
         collectionView?.backgroundColor = UIColor.whiteColor()
         collectionView?.registerNib(UINib(nibName: nib, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-        //collectionView?.setCollectionViewLayout(setupFlowLayout(), animated: false)
     }
     
     func setupFlowLayout() -> UICollectionViewFlowLayout{
